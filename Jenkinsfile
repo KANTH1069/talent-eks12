@@ -8,7 +8,7 @@ pipeline {
        stage("github download"){
           
            steps{
-               checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: 'git-ssh-auth-cred', url: 'git@github.com:malleshdevops/devops-us-maven.git']])
+               checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: 'git-ssh-auth-cred', url: 'git@github.com:Talent-devops20/talent-eks.git']])
            }
         }
        
