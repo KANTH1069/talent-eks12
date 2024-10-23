@@ -15,7 +15,7 @@ pipeline {
        stage("initialize"){
            steps{
                
-               sh 'terraform init'
+               sh 'terraform init -migrate-state'
            }
        }
        stage("validation"){
