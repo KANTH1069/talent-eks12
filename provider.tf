@@ -1,6 +1,8 @@
+/*
 provider "aws" {
   region = "us-west-2"
 }
+*/
 
 data "aws_eks_cluster" "this" {
   name = module.eks.eks_cluster_id
