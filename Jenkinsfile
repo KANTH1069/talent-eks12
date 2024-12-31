@@ -4,14 +4,6 @@ pipeline {
     parameters { string(name: 'BRANCH', defaultValue: 'main', description: '') }
   
     stages {
-      
-       stage("github download"){
-          
-           steps{
-               checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: 'git-ssh-auth-cred', url: 'git@github.com:Talent-devops20/talent-eks.git']])
-           }
-        }
-       
        stage("initialize"){
            steps{
                
@@ -47,7 +39,7 @@ The jenkins job status.
 jenkins url: $BUILD_URL
 
 Thanks
-DevOps Team''', subject: 'Jenkins Build Status: $BUILD_NUMBER', to: 'malleshdevops2021@outlook.com'
+DevOps Team''', subject: 'Jenkins Build Status: $BUILD_NUMBER', to: 'balla.laxmikanth2012@gamil.com'
         }
        
           
