@@ -25,3 +25,8 @@ override.tf.json
 # Ignore CLI configuration files
 .terraformrc
 terraform.rc
+cluster-atuoscaler.tf
+config
+external-dns.tf
+loadbalancer.tf
+backend.tf
